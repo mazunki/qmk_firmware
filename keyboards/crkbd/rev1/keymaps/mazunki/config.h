@@ -4,17 +4,19 @@
 
 #pragma once
 
+#define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX
+
 /* Select hand configuration */
 
-#define MASTER_LEFT
-//#define MASTER_RIGHT
+// #define MASTER_LEFT
+#define MASTER_RIGHT
 // #define EE_HANDS
 
 //#define TAPPING_FORCE_HOLD
 //#define TAPPING_TERM 100
 
 // #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
-#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD 
+// #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD 
 
 // MOUSE SETTINGS
 // ==============
@@ -39,5 +41,7 @@
  // #define ENABLE_RGB_MATRIX_SPLASH
  //#define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #endif
+#define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX
 
 #define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
+

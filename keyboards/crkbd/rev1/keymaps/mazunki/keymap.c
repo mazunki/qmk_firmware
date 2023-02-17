@@ -4,7 +4,7 @@
 #include "mazunki.h"
 #include "unicode_map.h"
 
-const uint16_t NONE = KC_NO;  // TODO: check type
+const uint16_t NONE = KC_NO;
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -17,9 +17,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [INTER] = LAYOUT_split_3x6_3(	
-	UU(0xE6),	(0xE6),	UC(0xE,	NONE,	NONE,	NONE,		NONE,	NONE,	NONE,	NONE,	NONE,	NONE,
 	NONE,	NONE,	NONE,	NONE,	NONE,	NONE,		NONE,	NONE,	NONE,	NONE,	NONE,	NONE,	
-	NONE,	NONE,	NONE,	NONE,	NONE,	NONE,		NONE,	NONE,	NONE,	NONE,	NONE,	NONE,	
+	NONE, XP(KC_ae, KC_AE),	XP(KC_oe, KC_OE),	XP(KC_aa, KC_AA),	NONE,	NONE,		NONE,	NONE,	NONE,	NONE,	XP(KC_ny, KC_NY),	NONE,
+	KC_LSFT,	NONE,	NONE,	NONE,	NONE,	NONE,		NONE,	NONE,	NONE,	NONE,	NONE,	NONE,	
 				NONE,	NONE,	NONE,		NONE,	NONE,	NONE
 ),
 
@@ -36,8 +36,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	NONE,	NONE,	NONE,	NONE,	KC_LCTL,	NONE,		KC_LEFT,	KC_DOWN,	KC_UP,	KC_RGHT,	KC_END,	KC_PGDN,
 				KC_SPC,	KC_LSFT,	TO(BASE),		NONE,	NONE,	NONE
 )
-}
+};
 
 
-// vim: tabstop=15 shiftwidth=15 softtabstop=15 noexpandtab
+// vim: tabstop=20 shiftwidth=20 softtabstop=20 noexpandtab
 
